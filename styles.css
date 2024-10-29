@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+/*=============================================================================== HEADER*/
+header {
+    max-width: 80%;
+    width: 20%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.551);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:  0px 0px 50px 50px;
+    filter: drop-shadow(2px 2px 5px rgb(0, 0, 0));
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+.containerheader {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 8vh;
+    padding: 5px;
+}
+.containerheader, ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.containerheader, li, a {
+    color: #c17140;
+    font-size: 20px;
+}
+
+.containerheader, a:hover {
+    color: #ffffff;
+    font-size: 20.5px;
+    filter: drop-shadow(2px 2px 15px rgb(255, 255, 255));
+}
+.header_hijo{
+    color: #ff914d; 
+    text-align: center;
+    margin: 10px;
+    user-select: none;
+}
+@media screen and (max-width: 1200px) {
+    header {
+        width: 80%;
+      
+    }
+}
+/*=============================================== sectiones snap-container */
+.snap-container {
+    height: 100vh;
+    overflow: auto;  
+    scroll-snap-type: y mandatory; 
+}
+.snap-section {
+    text-align: center;
+    scroll-snap-align: start;
+    min-height: 60vh;  
+  }
+
+/*=================================================================================== MAIN 1*/
+.mainfondo1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagenes/fondos/Fondo1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*img-png  MAIN 1*/
+.containerimgmain1{
+    height: auto;
+    margin-left: 30%;
+    position: relative;
+    padding: 20px;
+}
+.containerimgmain1, .png1 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    bottom: -480px;
+    mask-image: linear-gradient(black 80%, transparent );
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Mueve la imagen hacia arriba */
+    }
+    100% {
+        transform: translateY(0); /* Regresa a su posición original */
+    }
+}
+/*texto MAIN 1*/
+.containertxtmin1 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    margin-top: -80px;
+}
+.containertxtmin1, h1, h2 {
+    animation-duration: 1s;
+    animation-name: slidein;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    filter: drop-shadow(1px 0px 2px rgb(0, 0, 0));
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.containertxtmin1, h1 {
+    color: rgb(246, 246, 246);
+    font-size: 50px;
+}
+.textmain {
+    color: #ff0000;
+}
+.containertxtmin1, h2 {
+    color: rgb(255, 0, 0);
+    font-size: 41px;
+}
+
+
+
+/*Responsil para movil MAIN 1*/
+@media screen and (max-width: 991px) {
+    /*Responsil fondomovil Main1*/
+    .mainfondo1 {
+        background-image: url(./imagenes/fondos/Fondo1movil.png);
+        overflow-y: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    /*============== img-png MAIN1*/
+    .containerimgmain1{
+        height: auto;
+        margin-left: 10%;
+        position: relative;
+        padding: 20px;
+        
+    }
+    .containerimgmain1, .png1 {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        bottom: -520px;
+        mask-image: linear-gradient(black 80%, transparent );
+        animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px); /* Mueve la imagen hacia arriba */
+        }
+        100% {
+            transform: translateY(0); /* Regresa a su posición original */
+        }
+    }
+    /*Responsil movil texro MAIN1*/
+    .containertxtmin1{
+        width: 96%;
+    }
+
+    .containertxtmin1, h1{
+        font-size: 120%;
+    }
+}
+/*================================================================================================== MAIN 2*/
+.mainfondo2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagenes/fondos/Fondo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*foto-camilo-png*/
+.containerimg2{
+    position: relative;
+    width: 360px;
+    display: flex;
+    margin-left: 20px;
+}
+.containerimg2, .png2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -365px;
+    margin-right: auto;
+    margin-right: 50px;
+    filter: drop-shadow(0px -10px 15px rgb(0, 0, 0));
+    z-index: 5;
+}
+.png2 {
+    margin-top: -20px;
+}
+.icontext {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Descripción de texto*/
+
+.txdescriptivo {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+    padding: 10px;
+    
+}
+.botonm2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(#d49007, rgb(238, 255, 0), rgb(213, 171, 3));
+    color: rgb(12, 12, 12);
+    border: none;
+    border-radius: 15px;
+    animation: float 3s ease-in-out infinite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.botonm2:hover{
+   color: #7d1717;
+   font-size: 16.5px;
+}
+/*texto MAIN 2*/
+#descripcion {
+    font-size: 21px;
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 9px black);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 5px;
+    display: inline-block;
+    animation: expandirTexto 1s ease-in-out;
+  }
+  @keyframes expandirTexto {
+    0% {
+        transform: scale(2); 
+    }
+
+    100% {
+        transform: scale(1); 
+    }
+}
+  .texjc {
+    color: #ffc123;
+    font-weight: 700;
+  }
+  .lintextmain2 {
+    text-decoration: none;
+  }
+/*Responsil de movil MAIN 2*/
+@media screen and (max-width: 991px) {
+    .mainfondo2 {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./imagenes/fondos/Fondo2movil.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .containerimg2{
+        display: flex;
+        position: relative;
+        margin-left: auto;
+    }
+    .containerimg2, .png2{
+        width: 200px;
+        display: flex;
+        bottom: -520px;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-right: auto;
+        filter: drop-shadow(0px -10px 15px rgb(0, 0, 0));
+        z-index: 5;
+    }
+    .txdescriptivo {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 85%;
+        height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -15px;
+        padding: 2px;
+    }
+    button {
+        animation: float 3s ease-in-out infinite;
+        color: red;
+    }
+    #descripcion{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+/*============================================================================================================ MAIN 3*/
+ .mainfondo3 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagenes/fondos/Fondo3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+ }
+.h1div {
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+.raya3 {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 2px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*==== main 3 parrafo de texto*/
+.containermain3p {
+    width: 28%;
+    height: auto;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    margin-top: 80px;
+    margin-left: 30px;
+    padding: 5px;
+}
+.main3p {
+    color: rgb(250, 250, 250);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+ /*===================== main 3 ICONOS*/
+ .containermain3icon1 {
+    width: 50%; 
+    overflow: hidden; 
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(128, 0, 0), rgb(128, 0, 0), rgba(255, 255, 255, 0)); 
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin-left: 500px;
+    margin-top: -200px;
+ } 
+ .containermain3icon1hijo {
+    display: flex; 
+    justify-content: space-around;
+    min-width: 100%; 
+    animation: scroll 20s linear infinite; 
+ }
+ .containermain3icon1hijo a {
+    padding: 0 20px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: #ffffff; 
+    font-family: Arial, sans-serif;
+    white-space: nowrap; 
+ }
+ @keyframes scroll {
+    from {
+      transform: translateX(100%); 
+    }
+    to {
+      transform: translateX(-100%); 
+    }
+  }
+  .containermain3icon1:hover .containermain3icon1hijo {
+    animation-play-state: paused; 
+  }
+
+.containermain3icon2 {
+    width: 50%; 
+    overflow: hidden; 
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(128, 0, 0), rgb(128, 0, 0), rgba(255, 255, 255, 0)); 
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.containermain3icon2hijo {
+    display: flex; 
+    justify-content: space-around;
+    min-width: 100%; 
+    animation: scroll 25s linear infinite; 
+}
+.containermain3icon2hijo a {
+    padding: 0 20px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: #ffffff; 
+    font-family: Arial, sans-serif;
+    white-space: nowrap; 
+}
+.containermain3icon2:hover .containermain3icon2hijo {
+    animation-play-state: paused;
+  }
+
+/*==== MAIN 3 Responsive */
+@media screen and (max-width: 991px) {
+    .containermain3p {
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 35px;
+        padding: 5px;
+    }
+    .main3p {
+        font-size: 15px;
+    }   
+    .containermain3icon1 {
+        margin-left: 100px;
+        margin-top: 20px;
+     } 
+     .containermain3icon1hijo a {
+        padding: 0 50px; 
+        font-size: 18px; 
+     }
+     .containermain3icon2 {
+        width: 50%;
+        margin-left: 100px;
+        margin-top: 30px;
+     } 
+     .containermain3icon2hijo a {
+        padding: 0 50px; 
+     }
+}
+
+/*=================================================================================================================== MAIN 4*/
+
+/* === CARITA FELIZ*/
+.containerm4 {
+    background-image: url(./imagenes/fondos/Fondo4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container1main4 {
+    margin-right:auto;
+    margin-left: 300PX;
+    filter: drop-shadow(0px 0px 9px yellow);
+}
+/*=============== m4 MOVIL*/
+@media screen and (max-width: 991px) {
+    .containerm4 {
+        background-image: url(./imagenes/fondos/Fondo4movil.png);
+    }
+    .carita {
+        margin-left: -10px;
+        margin-top: -200px;
+    }
+    .center-container {
+        position: relative;
+        width: 50%;
+        margin-right: 250px;
+        margin-top: 80px;
+    }
+    .typing-container {
+        margin-left: -110px;
+    }
+    .botonm4 {
+        margin-top: -100px;
+    }
+    footer {
+        margin-top: -100px;
+    }
+        
+
+   
+}
+
+/* Carita Feliz */
+.container1main4 {
+    padding: 20px;
+    width: 13%;
+    height: 200px;
+}
+.carita {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), inset 0px 0px 15px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ojos */
+.ojo {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+}
+
+.ojo.izq {
+    left: 50px;
+}
+
+.ojo.der {
+    right: 50px;
+}
+
+/* Pupilas */
+.pupila {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    animation: mirar 4s infinite;
+}
+
+.ojo.izq .pupila {
+    left: 10px;
+}
+
+.ojo.der .pupila {
+    right: 10px;
+}
+
+/* Animación de los ojos mirando hacia los lados y luego al centro */
+@keyframes mirar {
+    0%, 100% { transform: translateX(0); } /* Mirada al centro */
+    25% { transform: translateX(10px); }  /* Ojos hacia la derecha */
+    50% { transform: translateX(-10px); } /* Ojos hacia la izquierda */
+}
+
+/* Boca */
+.boca {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 0 0 100px 100px;
+    position: absolute;
+    top: 120px;
+    animation: sonreir 4s infinite;
+}
+
+/* Animación de la sonrisa */
+@keyframes sonreir {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+/* ============================================================================== PARRAFO*/
+.botonm4 {
+    padding: 5px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(#d49007, rgb(238, 255, 0), rgb(213, 171, 3));
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 15px;
+    animation: float 3s ease-in-out infinite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 250px;
+}
+.botonm4:hover {
+    color: #ff0000;
+    font-size: 16.5px;
+}
+
+.typing-container {
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 240px; /* Ancho fijo del marco */
+    height: 160px; /* Aumentar la altura del marco */
+    position: relative;
+    margin-right: 450px;
+}
+@font-face {
+    font-family: 'Maigraf';
+    src: url('./Tipo-grafia/Minecraft/1_Minecraft-Regular.otf') format('opentype');
+}
+.tm4{
+    color: rgb(255, 255, 255);   
+    font-family: 'Maigraf', sans-serif;
+    filter: drop-shadow(1px 1px 1px black);
+}
+.typing-text {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+    white-space: pre-line; /* Permitir que el texto se divida en varias líneas */
+    clip-path: inset(0 100% 0 0); /* Ocultar el texto al principio */
+}
+
+/* Animación para el efecto de escritura */
+@keyframes typing {
+    0% {
+        clip-path: inset(0 100% 0 0); /* Texto oculto */
+    }
+    100% {
+        clip-path: inset(0 0 0 0); /* Texto completo visible */
+    }
+}
+
+.show-text {
+    animation: typing 2s steps(50, end) forwards;
+}
+/*=================================================*/
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(34, 34, 34);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.footericon {
+    
+    position: relative;
+    margin-right: 50px;
+}
+.footericon i{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.footerp {
+    color: #cecece;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5px;
+}
+.footerh5 {
+    color: rgb(179, 179, 179);
+    font-family: Helvetica;
+    margin: 15px;
+}
+@media screen and (max-width: 800px) {
+    footer {
+        width: 100%;
+        height: 80px;
+        background-color: rgb(55, 55, 55);
+        justify-content: center;
+        align-items: center;
+        display:grid;
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+    .footericon i{
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .footerp {
+        color: #b6b6b6;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    .footerh5 {
+        color: rgb(159, 159, 159);
+        font-family: Helvetica;
+        text-align: center;
+    }
+}
+

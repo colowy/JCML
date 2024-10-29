@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+body {
+    background-image: url(./imagenes/fondos/Fondocontacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+
+}
+
+
+
+
+/*========================================================== MONITOR*/
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.iniciomenu {
+    background: linear-gradient(rgba(36, 121, 53, 0.481), rgba(0, 0, 0, 0.305) 55% );
+    backdrop-filter: blur( 10px);
+    width: 40px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+a {
+    margin-left: 30%;
+    color: rgb(217, 217, 217);
+}
+a:hover {
+    color: rgb(255, 255, 255);
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(247, 247, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    filter: drop-shadow(0px 0px 9px rgb(0, 0, 0));
+
+}
+p {
+    text-align: center;
+    color: #ffffff;
+    user-select: none;
+}
+.watsaicon {
+    margin-left: 52%;
+}
+
+
+/*===================================================================================== MONITOR 2*/
+
+.form {
+    backdrop-filter: blur(50px);
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 50px;
+    width: 30%;
+    height: 62vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 15px;
+    font-family: VerdanA;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+input, textarea {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+}
+textarea {
+    height: 80px;
+    width: 100%;
+    resize: none;
+}
+.fortext {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.typ {
+    color: rgb(163, 163, 163);
+    text-align: center;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.containerboton {
+    display: flex;
+}
+.boton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 4vh;
+    background-color: rgb(58, 143, 46);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(254, 254, 254, 0.711);
+    border-radius: 5%;
+}
+.boton:hover {
+    background-color: rgba(128, 220, 137, 0.575);
+}
+
+.whatsapp {
+    margin-left: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    body {
+        background-image: url(./imagenes/fondos/Fondocontacto.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 90vh;
+        
+    }
+    /*============================ MOVIL*/
+
+    header {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    
+    .iniciomenu {
+        background: linear-gradient(rgba(36, 121, 53, 0.481), rgba(0, 0, 0, 0.305) 55% );
+        backdrop-filter: blur(10px);
+        width: 40px;
+        height: 30px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    a {
+        margin-left: 10px;
+        color: rgb(220, 220, 220);
+    }
+    a:hover {
+        color: rgb(255, 255, 255);
+    }
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    /*==============================================MOVIL 2*/
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .form {
+        background-color: rgba(0, 0, 0, 0.311);
+        border: 1px rgb(255255, 255) solid;
+        border-radius: 50px;
+        width: 80%;
+        height: 60vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 20px;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+        font-family: VerdanA;
+        width: 70%;
+        color: rgb(255, 255, 255);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input, textarea {
+        background-color: rgb(254, 254, 254);
+        border-radius: 10px;
+        border: 5px solid rgb(255, 255, 255);
+    }
+    h1 {
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fortext {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    
+    .typ {
+        color: rgb(181, 180, 180);
+        text-align: center;
+        font-size: 12px;
+    }
+   
+}

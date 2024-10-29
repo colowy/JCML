@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/faqvicon.png" type="image/x-icon">
+    <!--iconos-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+
+    <!--link CSS-->
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class="iniciomenu">
+            <a href="index.html" id="iconmenu"><i class="fa-solid fa-house"></i></a>
+            <p>Inicio</p>
+
+        </div>
+    </header>
+
+
+    <form class="form" action="" id="form">
+        <h1>Contactar</h1>
+        <p>¡Porfavor rellenar el formulario!</p>
+        <div class="containerhijo">
+            <label for="name">Nombre Completo: <input type="name" name="name" id="name" required placeholder="Nombre"></label>
+            <label  for="email">Correo Electrónico: <input type="email" name="email" id="email" required placeholder="Email"></label>
+            <label  for="message">Mensaje: <textarea name="message" id="message" cols="30" rows="5" placeholder="Deje su mensaje..."></textarea></label>
+
+            <div class="fortext">
+                <a class="typ" href="#">Politica de privacidad</a>
+                <a class="typ" href="#">Terminos y condiciones</a>
+            </div>
+            <div class="containerboton">
+                <button class="boton" type="submit">Enviar</button>
+            </div>
+        </div>
+        <a href="mailto:08colom08@gmail.com" id="trucazo"></a>
+    </form>
+        <a class="watsaicon" href="https://api.whatsapp.com/send?phone=+34631182608&text=¡Hola! vas a contactar con Camilo"><img class="whatsapp" src="./imagenes/img/watzap.png" alt="imgwatzap" width="60px"></a>
+
+    
+
+        <script>
+            const $form = document.querySelector('#form')
+            const $buttonMailto = document.querySelector('#trucazo')
+        
+            $form.addEventListener('submit', handleSubmit)
+        
+            function handleSubmit(event) {
+              event.preventDefault()
+              const form = new FormData(this)
+              $buttonMailto.setAttribute('href', `mailto:08colom08@gmail.copm?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+              $buttonMailto.click()
+            }
+          </script>
+        
+</body>
+</html>
